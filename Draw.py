@@ -58,12 +58,15 @@ class Draw:
         imgData=imgSensor
         if(len(dataList)!=0):
             imgData=self.DrawCircle(img,dataList,r=255,g=0,b=255,radius=self.pixel_rate//2)
+            imgData = self.DrawCircle(img, dataList, r=255, g=0, b=255, radius=2)
         if(len(distance)!=0):
             imgData=self.DrawCircles(img,distance,r=0,g=255,b=0)
+        print("Distance to sensors:")
+        print(distance)
         cv2.imshow("Data", imgData)
         cv2.waitKey(0)
 
-    def Draw(self,sensorPositions,TrackedDevices,Signals,Sensors,stamp):
+    def Draw(self,sensorPositions,Signals,stamp):
         """Draw the map according to timestamp"""
         find=False
         index=-1
@@ -99,7 +102,6 @@ class Draw:
 
         print("Begin drawing")
 
-        sig = [-42, -48, -14]
 
         wifi = WIFI()
         wifi.sensorList = drawPos
