@@ -37,7 +37,7 @@ fileName="rawData.txt"
 
 
 
-Signals=[{"timestamp": "1", "deviceID": "G", "sensordata": {"c": -83.67347,"b":-61.12195,"a":-82.4286,}}]
+Signals=[{"timestamp": "1", "deviceID": "G", "sensordata": {"c": -79.83,"b":-53.8,"a":-80.5}}]
 
 draw=Draw()
 sensorPositions={"a":[5,13],"b":[10,5],"c":[15,13]}
