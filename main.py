@@ -37,10 +37,10 @@ fileName="rawData.txt"
 
 
 
-Signals=[{"timestamp": "1", "deviceID": "G", "sensordata": {"c": -79.83,"b":-53.8,"a":-80.5}}]
+Signals=[{"timestamp": "1", "deviceID": "G", "sensordata": {"c": -80.5087,"b":-50.8947,"a":-78.32142,"d":-75.843,"e":-79.866}}]
 
 draw=Draw()
-sensorPositions={"a":[5,13],"b":[10,5],"c":[15,13]}
+sensorPositions={"a":[5,13],"b":[10,5],"c":[15,13],"d":[2,6.5],"e":[17,6.5]}
 draw.SetMap(20,15,1)
 timestamp="1"
 draw.Draw(sensorPositions,Signals,timestamp)

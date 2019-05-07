@@ -1,7 +1,7 @@
 from numpy import *
 class WIFI:
-    A=53.8   #45-49 Recommended
-    n=2.67   #3.25-4.5 Recommended
+    A=50.8947   #45-49 Recommended
+    n=3.1   #3.25-4.5 Recommended
     sensorList = []
 
     def SetParameter(self,p_A,p_n):
